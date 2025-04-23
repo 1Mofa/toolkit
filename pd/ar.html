@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>LSPD Arrest Report</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/pdar.css">
+
+    <link rel="icon" type="image/svg+xml" href="../assets/report.svg" />
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand">Mofa's Toolbox</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../">Home</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row content">
+
+            <div class="outer-border">
+                <form data-persist="garlic" name="pdar" class="d-flex flex-column align-items-center" autocomplete="off">
+                    <div class="content">
+
+                        <img src="../assets/lspd-lg.png" class="mx-auto d-block" width="200px">
+
+                        <div class="page-style">
+                            <h1>LOS SANTOS POLICE DEPARTMENT<br>ARREST REPORT</h1>
+                            <table id="container1">
+                                <tr>
+                                    <th colspan="2" width="48%">ARRESTEE NAME (FIRST, MIDDLE, LAST)</th>
+                                    <th width="12%">SEX (M/F/O)</th>
+                                    <th width="20%">HAIR</th>
+                                    <th width="20%">EYES</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" name="aName" placeholder="FIRST LAST">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aSex" placeholder="M/F/O">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aHair" placeholder="HAIR COLOUR">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aEye" placeholder="EYE COLOUR">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">RESIDENCE</th>
+                                    <th>AGE</th>
+                                    <th>HEIGHT</th>
+                                    <th>DESCENT</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" name="aResidence" placeholder="ADDRESS">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aAge" placeholder="AGE">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aHeight" placeholder="HEIGHT">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="aDescent" placeholder="DESCENT">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="3">CLOTHING</th>
+                                    <th colspan="2">PERSONAL ODDITIES</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="text" name="aClothing" placeholder="DESCRIBE CLOTHING">
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="aOddities" placeholder="DESCRIBE ODDITIES">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="3">MONIKER / ALIAS</th>
+                                    <th colspan="2">GANG / CLUB</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">
+                                        <input type="text" name="aMoniker" placeholder="MONIKER IF KNOWN">
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="aGang" placeholder="GANG IF KNOWN">
+                                    </td>
+                                </tr>
+                                <tr style="border-top: 2px solid black;">
+                                    <th colspan="5">PERSONS WITH SUBJECT</th>
+                                </tr>
+                                <tr>
+                                    <th colspan="2">NAME (FIRST, MIDDLE, LAST)</th>
+                                    <th>SEX (M/F/O)</th>
+                                    <th colspan="2">GANG / MONIKER</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">
+                                        <input type="text" name="pName" placeholder="FIRST LAST">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="pSex" placeholder="M/F/O">
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="pMoniker" placeholder="MONIKER IF KNOWN">
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr>
+                                    <td style="padding: 2px 0; border-bottom: 0;">
+                                        <table>
+                                            <tr>
+                                                <td style="border: 0;">
+                                                    <button type="button" class="btn btn-success add_form_field1">
+                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                                            <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                                <td style="border: 0;">
+                                                    <button type="button" class="btn btn-danger remove_form_field1">
+                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                                            <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr style="border-top: 2px solid black;">
+                                    <th width="36%">DATE</th>
+                                    <th width="12%">TIME</th>
+                                    <th colspan="3" width="52%">LOCATION</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="date" placeholder="DD/MMM/YYYY">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="time" placeholder="HH:MM">
+                                    </td>
+                                    <td colspan="3">
+                                        <input type="text" name="loc" placeholder="LOCATION">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>OFFICER</th>
+                                    <th>SERIAL NO.</th>
+                                    <th width="12%">CALLSIGN</th>
+                                    <th colspan="2">DIV / DETAIL</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="text" name="oName" placeholder="FIRST LAST">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="oSerial" placeholder="SERIAL">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="oCallsign" placeholder="CALLSIGN">
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" name="oDivision" placeholder="DIVISION">
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr>
+                                    <td style="padding: 2px 0; border-bottom: 0;">
+                                        <table>
+                                            <tr>
+                                                <td style="border: 0;">
+                                                    <button type="button" class="btn btn-success add_form_field2">
+                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                                            <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                                <td style="border: 0;">
+                                                    <button type="button" class="btn btn-danger remove_form_field2">
+                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                                            <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        </svg>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <table>
+                                <tr style="border-top: 2px solid black;">
+                                    <th>SOURCE OF ACTIVITY</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="source" name="source" placeholder="Describe the source of the activity. Which unit were you a part of? Which Officers were involved? How was the situation initiated? (e.g. through a 911 call, civilian flag down, Officers witnessed the activity). Any information that was available prior to the investigation starting."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>INVESTIGATION</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="investigation" name="investigation" placeholder="Describe the scene and the investigation in chronological. (Examples: At a traffic stop, it starts at the point where you have the suspect pulled over. When responding to a scene, it starts at the moment you arrive.)"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ARREST</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="arrest" name="arrest" placeholder="Describe what charges the suspect is under arrest for. If you need to argue or explain some of the charges, this is the section for it."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>PHOTOGRAPHS, VIDEOS, IN-CAR VIDEO (DICV), AND DIGITAL IMAGING</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="footage" name="footage" placeholder="Describe / Attach video or photographic evidence in this section. Include how evidence was obtained, what type evidence and who obtained it. (e.g., if photographs were taken on the scene, identify who took them.)"></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>BOOKING</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="booking" name="booking" placeholder="Describe details about booking of the suspect. Pictures / prints / dna taken? Items secured? Where were they booked? Who booked them, if someone else booked them."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>PHYSICAL EVIDENCE</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="evidence" name="evidence" placeholder="What kind of physical evidence is related to this arrest? Note down relevant descriptions and el. Bodies also count as evidence. Include evidence locker ID's as well as casing labels."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>COURT INFORMATION</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="court" name="court" placeholder="Information for the court. Who can testify? Who was involved in the scene? Anything relevant for a possible trial."></textarea>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>ADDITIONAL</th>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <textarea rows="6" id="additional" name="additional" placeholder="Additional information."></textarea>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="center">
+                        <button class="bottom-buttons btn btn btn-primary" onclick="generate()" type="button">Generate</button>
+                        <button class="bottom-buttons btn btn-outline-danger" type="reset" onClick="localStorage.clear();window.location.reload();">Reset Data</button>
+                    </div>
+
+                    <div id="myModal" class="modal fade" role="dialog">
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Modal title</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <textarea class="modal-body" id="modalBody">
+                                </textarea>
+                                <div class="modal-footer">
+                                    <button id="copy" type="button" class="btn btn-primary" onclick="copyToClipboard();" data-toggle="tooltip">Copy to
+                                        Clipboard</button>
+                                    <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-3" style="background-color: #f5f5f5;">
+        <div class="container text-center">
+            <span class="text-muted">© 2025 Mofa's Toolbox</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="../js/pdarScript.js"></script>
+    <script src="../js/garlic.min.js"></script>
+
+
+</body>
+
+</html>

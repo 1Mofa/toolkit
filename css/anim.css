@@ -1,0 +1,15 @@
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+footer {
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px -4px 12px;
+}
+
+svg.copy-icon {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin: 0 0 0.3em 0.3em;
+}
