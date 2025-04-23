@@ -27,20 +27,6 @@ select:focus {
     outline: 0;
 }
 
-hr {
-    margin: 0.5rem 0;
-}
-
-#header-img {
-    padding-bottom: 0.3rem;
-}
-
-@media (max-width: 1040px) {
-    #header-img {
-        width: 100%;
-    }
-}
-
 #modalBody {
     height: 60vh;
 }
@@ -83,21 +69,6 @@ footer {
     .outer-border {
         width: 1200px;
     }
-}
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.dropdown {
-    cursor: pointer;
-}
-
-.dropdown-item:active {
-    background-color: #111;
 }
 
 .page-style {

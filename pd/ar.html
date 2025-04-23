@@ -113,43 +113,31 @@
                                 </tr>
                                 <tr>
                                     <td colspan="2">
-                                        <input type="text" name="pName" placeholder="FIRST LAST">
+                                        <input type="text" name="pName[0]" placeholder="FIRST LAST">
                                     </td>
                                     <td>
-                                        <input type="text" name="pSex" placeholder="M/F/O">
+                                        <input type="text" name="pSex[0]" placeholder="M/F/O">
                                     </td>
                                     <td colspan="2">
-                                        <input type="text" name="pMoniker" placeholder="MONIKER IF KNOWN">
+                                        <input type="text" name="pMoniker[0]" placeholder="MONIKER IF KNOWN">
                                     </td>
                                 </tr>
                             </table>
 
-                            <table>
-                                <tr>
-                                    <td style="padding: 2px 0; border-bottom: 0;">
-                                        <table>
-                                            <tr>
-                                                <td style="border: 0;">
-                                                    <button type="button" class="btn btn-success add_form_field1">
-                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                                            <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                                <td style="border: 0;">
-                                                    <button type="button" class="btn btn-danger remove_form_field1">
-                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                                            <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="d-flex" style="gap: 5px; padding: 3px 5px; border: 1px solid black; border-width: 0 1px;">
+                                <button type="button" class="btn btn-success add_form_field1">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                        <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-danger remove_form_field1">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                        <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
 
-                            <table>
+                            <table id="container2">
                                 <tr style="border-top: 2px solid black;">
                                     <th width="36%">DATE</th>
                                     <th width="12%">TIME</th>
@@ -174,44 +162,32 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="text" name="oName" placeholder="FIRST LAST">
+                                        <input type="text" name="oName[0]" placeholder="FIRST LAST">
                                     </td>
                                     <td>
-                                        <input type="text" name="oSerial" placeholder="SERIAL">
+                                        <input type="text" name="oSerial[0]" placeholder="SERIAL">
                                     </td>
                                     <td>
-                                        <input type="text" name="oCallsign" placeholder="CALLSIGN">
+                                        <input type="text" name="oCallsign[0]" placeholder="CALLSIGN">
                                     </td>
                                     <td colspan="2">
-                                        <input type="text" name="oDivision" placeholder="DIVISION">
+                                        <input type="text" name="oDivision[0]" placeholder="DIVISION">
                                     </td>
                                 </tr>
                             </table>
 
-                            <table>
-                                <tr>
-                                    <td style="padding: 2px 0; border-bottom: 0;">
-                                        <table>
-                                            <tr>
-                                                <td style="border: 0;">
-                                                    <button type="button" class="btn btn-success add_form_field2">
-                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                                            <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                                <td style="border: 0;">
-                                                    <button type="button" class="btn btn-danger remove_form_field2">
-                                                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
-                                                            <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                        </svg>
-                                                    </button>
-                                                </td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
+                            <div class="d-flex" style="gap: 5px; padding: 3px 5px; border: 1px solid black; border-width: 0 1px;">
+                                <button type="button" class="btn btn-success add_form_field2">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                        <path d="M6 12H18M12 6V18" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                                <button type="button" class="btn btn-danger remove_form_field2">
+                                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" width="20px">
+                                        <path d="M6 12L18 12" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </div>
 
                             <table>
                                 <tr style="border-top: 2px solid black;">
@@ -282,7 +258,7 @@
                         </div>
                     </div>
 
-                    <div class="center">
+                    <div>
                         <button class="bottom-buttons btn btn btn-primary" onclick="generate()" type="button">Generate</button>
                         <button class="bottom-buttons btn btn-outline-danger" type="reset" onClick="localStorage.clear();window.location.reload();">Reset Data</button>
                     </div>
@@ -297,8 +273,10 @@
                                         <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
-                                <textarea class="modal-body" id="modalBody">
-                                </textarea>
+                                <div class="modal-body" id="modalBody" style="overflow-y: scroll;">
+                                    <div id="preview" class="d-flex justify-content-center"></div>
+                                    <textarea id="code-output" class="mt-5" rows="20"></textarea>
+                                </div>
                                 <div class="modal-footer">
                                     <button id="copy" type="button" class="btn btn-primary" onclick="copyToClipboard();" data-toggle="tooltip">Copy to
                                         Clipboard</button>
